@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600&display=swap');*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+* a{
+  color: black;
+  text-decoration: none;
+}
+* li{
+  list-style: none;
+}
+.container{
+  position: relative;
+  min-height: 100vh;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.bg::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image:url('https://images.unsplash.com/photo-1507553532144-b9df5e38c8d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2113&q=80');
+  z-index: -1;
+  background-size: cover;
+  background-position:center;
+  filter: brightness(70%);
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul{
+  display: flex;
+}
+.navbar ul li{
+  padding: 10px 20px;
+}
+.navbar ul li a{
+  font-weight: 400;
+  font-size: 17px;
+  color: #fff;
+}
+.navbar ul li:hover{
+  background:rgba(255,255,255,.1);
+  border-bottom: 1.5px solid #fff;
+}
+.sidebar-search{
+padding: 10px;
+color: none;
+}
+.menu{
+  align-items: center;
+  justify-content: center;
+}
+.navbar .menu a{
+  width: 40px;
+  height: 50px;
+  width: 100%;
+}
+.search-bar input{
+  background: transparent;
+  border: 0.5;
+  border-top: 1px;
+  border-right: 1px;
+  border-left: 1px;
+  border-color: #fff;
+  padding: 10px 10px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-weight: 0.2rem;
+  flex: 1;
+  outline: none;
+}
+::placeholder{
+  padding-bottom: 1px;
+  color: #fff;
+  opacity: 0.6;
+}
+.search-bar button img{
+  width: 25px;
+}
+.search-bar button{
+  border: 0;
+  width: 60px;
+  height: 20px;
+  background: transparent;
+}
+.icons{
+  display: flex;
+  align-items: center;
+}
+.icons i {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 10px;
+}
+.content{
+  width: 85%;
+  margin: 0 auto;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.content .header-info{
+  color: #fff;
+}
+.content .header-info h1{
+  font-size: 5rem;
+  letter-spacing: 2px;
+}
+.content .header-info p{
+  opacity: .6;
+}
+.header-info {
+width: 600px;
+}
+/*===================== Shop now buttons =======================*/
+.buttonshop{
+  display: block;
+  margin: 30px 0px;
+  width: 200px;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+.SHOP-NOW a{
+  color: #fff;
+  font-weight: 400;
+}
+.SHOP-NOW :hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+.slide-container{ 
+  max-width: 1120px;
+  width: 100%;
+  background-color: gray;
+  padding: 40px;
+}
+.slide-content{
+  margin: 0 40px;
+}
+.wrapper .carousel{
+  display:grid;
+  grid-auto-flow: column;
+}
+/*===================== Head =======================*/
+
+.haeder_Featured{
+  border-color:1px solid blue;
+  width: 100%;
+}
+/*===================== CARD =======================*/
+
+.container2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  text-align: center;
+}
+
+.card__container{
+  padding-block: 5rem;
+  color: black;
+}
+.card__container h2{
+  font-size: 60px;
+}
+.card__container button{
+  text-align: center;
+  background-color: #000000; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+
+}
+.card__container p1{
+  font-size: 23px;
+  color: #585858;
+}
+
+.card__content{
+  margin-inline: 1.75rem;
+  overflow: hidden;
+}
+
+.card__article{
+  margin: 20px;
+  margin-top: 150px;
+  width: 300px;
+  overflow: hidden;
+}
+
+.card__image{
+  position: relative;
+  background-color: var(--first-color-light);
+  padding-top: 1.5rem;
+  margin-bottom: -.75rem;
+}
+
+.card__data{
+  background-color: var(--container-color);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.card__img{
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.card__shadow{
+  width: 200px;
+  height: 200px;
+
+}
+.btn-group{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.btn-group button {
+  width: 10%;
+}
+
+/*===================== Banner =======================*/
+
+.banner {
+  background-color: #5a1313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 1200px;
+  background-image: url("../img/glamorous-pretty-women-posing-wearing-fur-coats.jpg");
+  background-size: cover;
+}
+
+.banner h4{
+  color: #fff;
+  font-size: 20px;
+}
+.banner h1{
+  color: #fff;
+  font-size: 80px; 
+}
+
+.sm-banner{
+
+  display: flex;
+  flex-wrap: wrap;
+}
+.sm-banner .banner-box{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("../img/1.jpg");
+  min-width: 580px;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.sm-banner .banner-box2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-image: url("../img/3.jpg");
+  min-width: 580px; 
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.sm-banner .banner-box:hover button{
+  background:rgba(255, 255, 255, 0.205);
+}
+.banner-box h1{
+  color: #fff;
+  font-size: 60px; 
+  font-weight: 500;
+}
+
+.banner-box h2{
+  color: #fff;
+  font-size: 40px; 
+  
+}
+
+.banner-box h3{
+  color: #fff;
+  font-size: 20px; 
+  font-weight: 300;
+}
+
+.banner-box h4{
+  color: #fff;
+  font-size: 20px; 
+  font-weight: 300;
+}
+.banner-box span{
+  color: #fff;
+  font-size: 20px; 
+  font-weight: 300;
+}
+.learn-more{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 18px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+.banner3{
+  display: flex;
+  padding: 0 -20px;
+}
+.banner3 .banner-box{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #000000;
+  min-width: 580px;
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+}
+.newsletter {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url("../img/3.jpg");
+  background-repeat: no-repeat;
+  background-position: 20%;
+  background-color: black;
+  min-width: 580px;
+  height: 15vh;
+  padding: 30px;
+}
+
+.newstext h4{
+  color: #fff;
+  font-size: 25px;
+}
+
+.newstext p{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+}
+.newsletter .form{
+  display: flex;
+  width: 40;
+}
+.newsletter input{
+  height: 40px;
+  padding: 0.1.25em;
+  font-size: 14px;
+  width: 300px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+}
+.newsletter button{
+  padding: 10px 10px;
+  background-color: #000000;
+  color: #ffffff;
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  border: 0;
+  font-weight: 600;
+}
+::placeholder{
+  padding: 10px;
+  color: #585858;
+}
+footer{
+  margin: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 120px;
+}
+footer .logo{
+  width: 200px;
+  margin-bottom: 20px;
+}
+footer h4{
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+footer .Paymentlogo{
+  width: 250px;
+}
+
+footer p {
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+footer a{
+  font-size: 16px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Change the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background-color: #00000050;
+  border-radius: 20px;
+}
+
+/* Change the color on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: transparent;
+}
